@@ -9,10 +9,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.31" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.31" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.31" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.31" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITAssetManager.Data\ITAssetManager.Data.csproj" />
+    <ProjectReference Include="..\ITAssetManager.GCommon\ITAssetManager.GCommon.csproj" />
+    <ProjectReference Include="..\ITAssetManager.Services.Core\ITAssetManager.Services.Core.csproj" />
+    <ProjectReference Include="..\ITAssetManager.ViewModels\ITAssetManager.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
